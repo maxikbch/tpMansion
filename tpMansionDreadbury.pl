@@ -28,7 +28,7 @@ esMasRicoQueAlguien(Persona, tiaAgatha):-
 mato(Persona, Victima):-
     viveEnLaMansion(Persona),
     odia(Persona, Victima),
-    esMasRicoQueAlguien(Persona, Victima).
+    not(esMasRicoQueAlguien(Persona, Victima)).
 
 %es odiador y es odiado
 
@@ -42,7 +42,7 @@ esOdiado(Persona):-
 
 %Consultas pedidas en el tp.
 
-% mato(Persona, tiaAgatha). => Persona = mayordomo.
+% mato(Persona, tiaAgatha). => Persona = tiaAgatha.
 
 % odia(_, milhouse). => false.
 
