@@ -44,7 +44,7 @@ mato(Persona, Victima):-
 
 % odia(Odiador,Odiado). =>
 %Odiador = Odiado, 
-Odiado = tiaAgatha ;
+%Odiado = tiaAgatha ;
 %Odiador = tiaAgatha,
 %Odiado = charles ;
 %Odiador = charles,
