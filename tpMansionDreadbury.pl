@@ -23,7 +23,7 @@ esMasRicoQueAlguien(Persona, tiaAgatha):-
     viveEnLaMansion(Persona),
     not(odia(mayordomo, Persona)).
 
-%mato a victima
+%mato a tia agatha
 
 mato(Persona, Victima):-
     viveEnLaMansion(Persona),
@@ -38,20 +38,21 @@ mato(Persona, Victima):-
 
 % odia(charles, Persona). => Persona = mayordomo.
 
-% odia(Persona, _). =>
+% odia(Persona, tiaAgatha).
 %Persona = tiaAgatha ;
-%Persona = tiaAgatha ;
-%Persona = charles ;
-%Persona = mayordomo ;
-%Persona = mayordomo ;
-%false.
+%Persona = mayordomo.
 
-% odia(_, Persona). =>  
-%Persona = tiaAgatha ;
-%Persona = charles ;
-%Persona = mayordomo ;
-%Persona = tiaAgatha ;
-%Persona = charles ;
+% odia(Odiador,Odiado). =>
+%Odiador = Odiado, 
+Odiado = tiaAgatha ;
+%Odiador = tiaAgatha,
+%Odiado = charles ;
+%Odiador = charles,
+%Odiado = mayordomo ;
+%Odiador = mayordomo,
+%Odiado = tiaAgatha ;
+%Odiador = mayordomo,
+%Odiado = charles ;
 %false.
 
 % odia(mayordomo, _). =>
