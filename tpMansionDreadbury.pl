@@ -30,16 +30,6 @@ mato(Persona, Victima):-
     odia(Persona, Victima),
     not(esMasRicoQueAlguien(Persona, Victima)).
 
-%es odiador y es odiado
-
-esOdiador(Persona):-
-    viveEnLaMansion(Persona),
-    odia(Persona, _).
-
-esOdiado(Persona):-
-    viveEnLaMansion(Persona),
-    odia(_, Persona).
-
 %Consultas pedidas en el tp.
 
 % mato(Persona, tiaAgatha). => Persona = tiaAgatha.
@@ -48,7 +38,7 @@ esOdiado(Persona):-
 
 % odia(charles, Persona). => Persona = mayordomo.
 
-% esOdiador(Persona). =>
+% odia(Persona, _). =>
 %Persona = tiaAgatha ;
 %Persona = tiaAgatha ;
 %Persona = charles ;
@@ -56,7 +46,7 @@ esOdiado(Persona):-
 %Persona = mayordomo ;
 %false.
 
-% esOdiado(Persona). =>  
+% odia(_, Persona). =>  
 %Persona = tiaAgatha ;
 %Persona = charles ;
 %Persona = mayordomo ;
